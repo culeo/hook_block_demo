@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B314713120F4A7DF006F5CB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B314713020F4A7DF006F5CB3 /* main.m */; };
+		B314713C20F4A7F7006F5CB3 /* ffi_demo.m in Sources */ = {isa = PBXBuildFile; fileRef = B314713720F4A7F6006F5CB3 /* ffi_demo.m */; };
+		B314713D20F4A7F7006F5CB3 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = B314713B20F4A7F7006F5CB3 /* fishhook.c */; };
+		B314714020F4A7FE006F5CB3 /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B314713F20F4A7FE006F5CB3 /* libffi.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		B314712D20F4A7DF006F5CB3 /* hook_block_demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hook_block_demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		B314713020F4A7DF006F5CB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B314713720F4A7F6006F5CB3 /* ffi_demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ffi_demo.m; sourceTree = "<group>"; };
+		B314713820F4A7F6006F5CB3 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		B314713920F4A7F6006F5CB3 /* question.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = question.jpg; sourceTree = "<group>"; };
+		B314713A20F4A7F7006F5CB3 /* ffi_demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_demo.h; sourceTree = "<group>"; };
+		B314713B20F4A7F7006F5CB3 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		B314713F20F4A7FE006F5CB3 /* libffi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libffi.tbd; path = usr/lib/libffi.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B314714020F4A7FE006F5CB3 /* libffi.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +53,7 @@
 			children = (
 				B314712F20F4A7DF006F5CB3 /* hook_block_demo */,
 				B314712E20F4A7DF006F5CB3 /* Products */,
+				B314713E20F4A7FE006F5CB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +69,21 @@
 			isa = PBXGroup;
 			children = (
 				B314713020F4A7DF006F5CB3 /* main.m */,
+				B314713A20F4A7F7006F5CB3 /* ffi_demo.h */,
+				B314713720F4A7F6006F5CB3 /* ffi_demo.m */,
+				B314713B20F4A7F7006F5CB3 /* fishhook.c */,
+				B314713820F4A7F6006F5CB3 /* fishhook.h */,
+				B314713920F4A7F6006F5CB3 /* question.jpg */,
 			);
 			path = hook_block_demo;
+			sourceTree = "<group>";
+		};
+		B314713E20F4A7FE006F5CB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B314713F20F4A7FE006F5CB3 /* libffi.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B314713C20F4A7F7006F5CB3 /* ffi_demo.m in Sources */,
+				B314713D20F4A7F7006F5CB3 /* fishhook.c in Sources */,
 				B314713120F4A7DF006F5CB3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
